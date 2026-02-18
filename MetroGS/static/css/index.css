@@ -750,11 +750,28 @@ a:focus {
 }
 
 .scene-dot:hover {
-  opacity: 0.6;
+  opacity: 0.1;
   transform: scale(1.1);
 }
 
 .scene-dot.is-active {
   opacity: 1;
   transform: scale(1.25);
+}
+
+.hero-body {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.publication-authors {
+  margin-bottom: 0.5rem !important;
+}
+
+.publication-links {
+  margin-top: 1rem !important;
+}
+
+.link-block {
+  margin: 0.2rem !important;
 }
