@@ -404,15 +404,3 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
-
-
-
-/* =========================================================
-   [REMOVED] 旧版全局 scenes + video-left/right 绑定（id 版本）
-   你之前文件末尾那段会在新结构下失效/冲突，所以删除
-   ---------------------------------------------------------
-   const scenes = [...]
-   const videoLeft = document.getElementById("video-left");
-   const videoRight = document.getElementById("video-right");
-   ...
-   ========================================================= */
