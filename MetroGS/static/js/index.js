@@ -178,10 +178,10 @@ document.addEventListener("DOMContentLoaded", () => {
       ]
     },
     {
-      // Scene Aerail
+      // Scene Aerial
       sliders: [
-        { left: "static/videos/depth/aerail.mp4", right: "static/videos/rgb/aerail.mp4" },    // slot 0
-        { left: "static/videos/mesh/aerail.mp4", right: "static/videos/texture/aerail.mp4" } // slot 1
+        { left: "static/videos/depth/aerial.mp4", right: "static/videos/rgb/aerial.mp4" },    // slot 0
+        { left: "static/videos/mesh/aerial.mp4", right: "static/videos/texture/aerial.mp4" } // slot 1
       ]
     }
   ];
