@@ -24,9 +24,7 @@
 }
 
 /* Smooth scrolling for better UX */
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -37,7 +35,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 
 /* Modern Button Styles */
 .button {
@@ -68,24 +65,18 @@ body {
 }
 
 .footer .icon-link {
-    font-size: 25px;
-    color: var(--text-secondary);
-    transition: var(--transition);
+  font-size: 25px;
+  color: var(--text-secondary);
+  transition: var(--transition);
 }
 
 .footer .icon-link:hover {
-    color: var(--primary-color);
-    transform: translateY(-2px);
+  color: var(--primary-color);
+  transform: translateY(-2px);
 }
 
-.link-block a {
-    margin: 8px 4px;
-}
-
-.dnerf {
-  font-variant: small-caps;
-}
-
+.link-block a { margin: 8px 4px; }
+.dnerf { font-variant: small-caps; }
 
 /* Hero Section Modernization */
 .hero {
@@ -99,27 +90,22 @@ body {
   border-bottom: 1px solid var(--border-color);
 }
 
-.hero-body {
-  padding: 4rem 1.5rem;
-}
+.hero-body { padding: 4rem 1.5rem; }
 
 .teaser .hero-body {
   padding-top: 2rem;
   padding-bottom: 4rem;
 }
 
-.teaser {
-  font-family: 'Inter', sans-serif;
-}
-
+.teaser { font-family: 'Inter', sans-serif; }
 
 /* Publication Content Styling */
 .publication-title {
-    font-family: 'Inter', sans-serif !important;
-    font-weight: 800 !important;
-    color: var(--text-primary) !important;
-    margin-bottom: 2rem !important;
-    line-height: 1.1 !important;
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 800 !important;
+  color: var(--text-primary) !important;
+  margin-bottom: 2rem !important;
+  line-height: 1.1 !important;
 }
 
 .publication-banner {
@@ -141,64 +127,57 @@ body {
   border-radius: var(--border-radius-lg);
 }
 
-.publication-header .hero-body {
-  padding: 6rem 1.5rem 4rem;
-}
+.publication-header .hero-body { padding: 6rem 1.5rem 4rem; }
 
 .publication-authors {
-    font-family: 'Inter', sans-serif !important;
-    font-weight: 500;
-    margin-bottom: 1.5rem;
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
 }
 
 .publication-venue {
-    color: var(--text-secondary);
-    width: fit-content;
-    font-weight: 600;
-    background: var(--background-accent);
-    padding: 0.5rem 1rem;
-    border-radius: var(--border-radius);
-    margin-top: 1rem;
-    display: inline-block;
+  color: var(--text-secondary);
+  width: fit-content;
+  font-weight: 600;
+  background: var(--background-accent);
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  margin-top: 1rem;
+  display: inline-block;
 }
 
 .publication-awards {
-    color: #ef4444;
-    width: fit-content;
-    font-weight: 700;
-    background: linear-gradient(135deg, #fef2f2, #fee2e2);
-    padding: 0.5rem 1rem;
-    border-radius: var(--border-radius);
-    border-left: 4px solid #ef4444;
-    margin-top: 1rem;
+  color: #ef4444;
+  width: fit-content;
+  font-weight: 700;
+  background: linear-gradient(135deg, #fef2f2, #fee2e2);
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  border-left: 4px solid #ef4444;
+  margin-top: 1rem;
 }
 
 .publication-authors a {
-   color: var(--primary-color) !important;
-   text-decoration: none;
-   font-weight: 600;
-   transition: var(--transition);
-   position: relative;
+  color: var(--primary-color) !important;
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+  position: relative;
 }
 
 .publication-authors a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -2px;
-    left: 0;
-    background: var(--gradient-accent);
-    transition: var(--transition);
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background: var(--gradient-accent);
+  transition: var(--transition);
 }
 
-.publication-authors a:hover::after {
-    width: 100%;
-}
-
-.publication-authors a:hover {
-    color: var(--primary-hover) !important;
-}
+.publication-authors a:hover::after { width: 100%; }
+.publication-authors a:hover { color: var(--primary-hover) !important; }
 
 .author-block {
   display: inline-block;
@@ -218,28 +197,28 @@ body {
 
 /* Modern Video and Carousel Styling */
 .publication-video {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-    overflow: hidden;
-    border-radius: var(--border-radius-lg) !important;
-    box-shadow: var(--shadow-xl);
-    transition: var(--transition);
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  border-radius: var(--border-radius-lg) !important;
+  box-shadow: var(--shadow-xl);
+  transition: var(--transition);
 }
 
 .publication-video:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-xl);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
 }
 
 .publication-video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: var(--border-radius-lg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--border-radius-lg);
 }
 
 .publication-body img {
@@ -302,7 +281,7 @@ body {
   transform: scale(1.2);
 }
 
-.eql-cntrb { 
+.eql-cntrb {
   font-size: 0.875rem;
   color: var(--text-light);
   font-style: italic;
@@ -337,9 +316,7 @@ body {
   color: var(--text-secondary);
 }
 
-.content.has-text-justified p {
-  margin-bottom: 1.5rem;
-}
+.content.has-text-justified p { margin-bottom: 1.5rem; }
 
 /* Footer Improvements */
 .footer {
@@ -410,13 +387,8 @@ code {
   box-shadow: var(--shadow-md);
 }
 
-.copy-bibtex-btn.copied {
-  background: #10b981;
-}
-
-.copy-bibtex-btn.copied .copy-text::after {
-  content: "ied!";
-}
+.copy-bibtex-btn.copied { background: #10b981; }
+.copy-bibtex-btn.copied .copy-text::after { content: "ied!"; }
 
 /* Scroll to Top Button */
 .scroll-to-top {
@@ -451,7 +423,6 @@ code {
   opacity: 1;
   visibility: visible;
 }
-
 
 /* More Works Dropdown */
 .more-works-container {
@@ -491,9 +462,7 @@ code {
   font-size: 0.8rem;
 }
 
-.more-works-btn.active .dropdown-arrow {
-  transform: rotate(180deg);
-}
+.more-works-btn.active .dropdown-arrow { transform: rotate(180deg); }
 
 .more-works-dropdown {
   position: absolute;
@@ -549,9 +518,7 @@ code {
   color: var(--text-primary);
 }
 
-.works-list {
-  padding: 1rem;
-}
+.works-list { padding: 1rem; }
 
 .work-item {
   display: flex;
@@ -597,131 +564,13 @@ code {
   flex-shrink: 0;
 }
 
-
-/* Mobile Responsive Improvements */
-@media screen and (max-width: 768px) {
-  .hero-body {
-    padding: 2rem 1rem;
-  }
-  
-  .publication-header .hero-body {
-    padding: 3rem 1rem 2rem;
-  }
-  
-  .publication-title {
-    font-size: 2.5rem !important;
-    line-height: 1.2 !important;
-    margin-bottom: 1.5rem !important;
-  }
-  
-  .publication-authors {
-    font-size: 1rem !important;
-  }
-  
-  .button {
-    margin: 0.25rem !important;
-    font-size: 0.875rem !important;
-    padding: 0.75rem 1rem !important;
-  }
-  
-  .more-works-container {
-    bottom: 2rem;
-    right: 1rem;
-    top: auto;
-  }
-  
-  .more-works-btn {
-    padding: 0.6rem 1rem;
-    font-size: 0.8rem;
-  }
-  
-  .more-works-dropdown {
-    width: calc(100vw - 2rem);
-    right: -1rem;
-    bottom: calc(100% + 0.5rem);
-    top: auto;
-  }
-  
-  .results-carousel .item {
-    margin: 0.5rem;
-    padding: 1rem;
-  }
-  
-  .teaser .hero-body {
-    padding: 1rem;
-  }
-  
-  .content.has-text-justified {
-    font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .publication-title {
-    font-size: 2rem !important;
-  }
-  
-  .hero-body {
-    padding: 1.5rem 0.75rem;
-  }
-  
-  .more-works-container {
-    position: fixed;
-    bottom: 2rem;
-    right: 1rem;
-    z-index: 1000;
-  }
-  
-  .more-works-btn {
-    padding: 0.5rem 0.75rem;
-    font-size: 0.75rem;
-  }
-  
-  .more-works-dropdown {
-    position: absolute;
-    bottom: calc(100% + 0.5rem);
-    right: 0;
-    width: calc(100vw - 2rem);
-    max-width: 90vw;
-  }
-  
-  .link-block {
-    display: block;
-    margin-bottom: 0.5rem;
-  }
-  
-  .button {
-    width: 100%;
-    justify-content: center;
-  }
-}
-
-/* Tablet Responsive */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .hero-body {
-    padding: 3rem 2rem;
-  }
-  
-  .publication-header .hero-body {
-    padding: 4rem 2rem 3rem;
-  }
-}
-
 /* Animation for page load */
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-.hero, .section {
-  animation: fadeInUp 0.6s ease-out;
-}
+.hero, .section { animation: fadeInUp 0.6s ease-out; }
 
 /* Improved focus states for accessibility */
 .button:focus,
@@ -731,17 +580,10 @@ a:focus {
   outline-offset: 2px;
 }
 
-
 /* Print styles */
 @media print {
-  .more-works-container {
-    display: none;
-  }
-  
-  .hero, .section {
-    animation: none;
-  }
-  
+  .more-works-container { display: none; }
+  .hero, .section { animation: none; }
   .button {
     background: transparent !important;
     color: var(--text-primary) !important;
@@ -749,5 +591,170 @@ a:focus {
   }
 }
 
+/* =========================================================
+   Compare Slider (Video Comparison) + Outside Arrows
+   ========================================================= */
 
+/* 让 compare 区域和容器（文字）宽度对齐 */
+.compare-outer {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;   /* ✅ 控制整体最大宽度：你想更大可改 1400 */
+  margin: 0 auto;      /* ✅ 居中 */
+  padding: 0 72px;     /* ✅ 给左右按钮预留空间（按钮不压到视频） */
+  box-sizing: border-box;
+}
 
+/* 两列占满 compare-outer 的宽度 */
+.compare-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;           /* ✅ 两列间距变小，画面更大 */
+  align-items: start;
+  width: 100%;
+}
+
+/* 每个对比组件占满各自列宽，不要固定像素宽 */
+.compare-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* 视频铺满容器 */
+.compare-wrapper video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 上层视频裁剪 */
+.compare-wrapper .video-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: inset(0 50% 0 0);
+}
+
+/* 拖动条 */
+.compare-wrapper .compare-handle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  cursor: ew-resize;
+  z-index: 10;
+}
+
+.compare-wrapper .handle-bar {
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: white;
+  transform: translateX(-50%);
+}
+
+.compare-wrapper .handle-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  background: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 6px rgba(0,0,0,0.4);
+}
+
+/* ✅ 箭头按钮：移到更外侧，不和视频重叠 */
+.clean-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  background: #fff;
+  border: none;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.18);
+  color: #111;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 20;
+}
+
+/* ✅ 关键：让按钮“分出去一点” */
+#prev-btn { left: 10px; }   /* 在 compare-outer 的 padding 区域里 */
+#next-btn { right: 10px; }
+
+.clean-arrow:hover {
+  transform: translateY(-50%) scale(1.05);
+  box-shadow: 0 14px 26px rgba(0,0,0,0.22);
+}
+
+/* ✅ 响应式：窄屏变一列，按钮缩小、padding 变小 */
+@media screen and (max-width: 900px) {
+  .compare-outer {
+    padding: 0 56px;
+    max-width: 100%;
+  }
+
+  .compare-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .clean-arrow {
+    width: 48px;
+    height: 48px;
+    font-size: 26px;
+  }
+
+  #prev-btn { left: 6px; }
+  #next-btn { right: 6px; }
+}
+
+@media screen and (max-width: 480px) {
+  .compare-outer { padding: 0 44px; }
+  .clean-arrow {
+    width: 44px;
+    height: 44px;
+    font-size: 24px;
+  }
+}
+
+/* [NEW] Pagination dots under the compare block */
+.scene-dots {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.scene-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #111;      /* 黑色点 */
+  opacity: 0.35;         /* 默认偏灰 */
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.scene-dot:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+.scene-dot.is-active {
+  opacity: 1;
+  transform: scale(1.25);
+}
