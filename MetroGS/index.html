@@ -351,10 +351,17 @@
   <div class="container is-max-widescreen">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
+        <div class="container" style="display:flex; justify-content:center; width:100%;">
+          <!-- <img 
+            src="static/images/framework.png"
+            alt="Framework"
+            style="width:100%; max-width:1000px; display:block;"
+          > -->
+        </div>
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
-          <p>
+          <p style="line-height:1.5; font-family: 'Times New Roman', Times, serif;">
             Recently, 3D Gaussian Splatting and its derivatives have achieved significant breakthroughs in large-scale scene reconstruction. However, how to efficiently and stably achieve high-quality geometric fidelity remains a core challenge. To address this issue, we introduce MetroGS, a novel Gaussian Splatting framework for efficient and robust reconstruction in complex urban environments. Our method is built upon a distributed 2D Gaussian Splatting representation as the core foundation, serving as a unified backbone for subsequent modules.
 To handle potential sparse regions in complex scenes, we propose a structured dense enhancement scheme that utilizes SfM priors and a pointmap model to achieve a denser initialization, while incorporating a sparsity compensation mechanism to improve reconstruction completeness.
 Furthermore, we design a progressive hybrid geometric optimization strategy that organically integrates monocular and multi-view optimization to achieve efficient and accurate geometric refinement.
@@ -371,11 +378,28 @@ Experiments on large-scale urban datasets demonstrate that MetroGS achieves supe
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container" style="display:flex; justify-content:center; width:100%;">
+      <figure style="max-width:1000px; width:100%; margin:0;">
       <img 
         src="static/images/fig-top.png"
         alt="Overview"
         style="width:100%; max-width:1000px; display:block;"
       >
+      <figcaption style="
+          margin-top:0px;
+          font-size:18px;
+          line-height:1.2;
+          color:#333333b7;
+          text-align: justify;
+          text-align-last: left;
+          font-family: 'Times New Roman', Times, serif;
+        ">
+      Illustration of the superiority of our method.
+      (a) Our method accurately reconstructs the geometric structure of large-scale urban scenes, 
+      faithfully restoring fine details such as buildings, vegetation, and roads.
+      (b) Compared with the SOTA method CityGSV2, our result are more complete and geometrically precise.
+      (c) Benefiting from a well-designed training framework, our method achieves superior convergence speed and geometric quality.
+      On four RTX 3090 GPUs, our method reaches better performance with less than 25% of the training time required by CityGSV2.
+  </figcaption>
     </div>
   </div>
 </section>
@@ -383,11 +407,36 @@ Experiments on large-scale urban datasets demonstrate that MetroGS achieves supe
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container" style="display:flex; justify-content:center; width:100%;">
+      <figure style="max-width:1000px; width:100%; margin:0;">
+        <!-- 标题（左上角，且不覆盖图片） -->
+        <div style="
+          font-size:30px;
+          font-weight:600;
+          color:#0b0b0bbb;
+          text-align:left;
+          margin-bottom:10px;
+        ">
+          Qualitative Analysis
+        </div>
       <img 
         src="static/images/fig1.png"
         alt="GauU-Scene"
         style="width:100%; max-width:1000px; display:block;"
       >
+      <figcaption style="
+          margin-top:0px;
+          font-size:18px;
+          line-height:1.2;
+          color:#333333b7;
+          text-align: justify;
+          text-align-last: left;
+          font-family: 'Times New Roman', Times, serif;
+        ">
+          Comparison with other advanced reconstruction methods on the GauU-Scene dataset. 
+          P and R indicate the Precision and Recall with respect to the ground-truth point cloud. 
+          "NaN" means no results due to NaN error. "FAIL" means fail to extract meaningful mesh.
+          MetroGS achieves state-of-the-art performance across all metrics.
+        </figcaption>
     </div>
   </div>
 </section>
@@ -395,11 +444,24 @@ Experiments on large-scale urban datasets demonstrate that MetroGS achieves supe
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container" style="display:flex; justify-content:center; width:100%;">
+      <figure style="max-width:1000px; width:100%; margin:0;">
       <img 
-        src="static/images/fig-mc.png"
+        src="static/images/fig2.png"
         alt="MatrixCity"
         style="width:100%; max-width:1000px; display:block;"
       >
+      <figcaption style="
+          margin-top:0px;
+          font-size:18px;
+          line-height:1.2;
+          color:#333333b7;
+          text-align: justify;
+          text-align-last: left;
+          font-family: 'Times New Roman', Times, serif;
+        ">
+          Left: Overall comparison with CityGSV2 on the GauU-Scene dataset. Right: Comparison with other methods on the MatrixCity dataset. 
+          MetroGS demonstrates excellent training efficiency while achieving strong performance on synthetic scenes.
+        </figcaption>
     </div>
   </div>
 </section>
@@ -407,11 +469,79 @@ Experiments on large-scale urban datasets demonstrate that MetroGS achieves supe
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container" style="display:flex; justify-content:center; width:100%;">
+
+      <figure style="max-width:1000px; width:100%; margin:0;">
+
+        <!-- 标题（左上角，且不覆盖图片） -->
+        <div style="
+          font-size:30px;
+          font-weight:600;
+          color:#0b0b0bbb;
+          text-align:left;
+          margin-bottom:10px;
+        ">
+          Rendering &amp; Depth
+        </div>
+
+        <img 
+          src="static/images/fig-dep.png"
+          alt="Depth"
+          style="width:90%; display:block;margin:0 auto;"
+        >
+
+        <figcaption style="
+          margin-top:16px;
+          font-size:18px;
+          line-height:1.2;
+          color:#333333b7;
+          text-align: justify;
+          text-align-last: left;
+          font-family: 'Times New Roman', Times, serif;
+          width:90%; margin: auto;
+        ">
+          Qualitative results on the GauU-Scene dataset. MetroGS produces more accurate and complete depth,
+          with improved robustness to appearance inconsistencies and fewer artifacts.
+        </figcaption>
+
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container" style="display:flex; justify-content:center; width:100%;">
+      <figure style="text-align:center; max-width:1000px;">
+        <div style="
+          font-size:30px;
+          font-weight:600;
+          color:#0b0b0bbb;
+          text-align:left;
+          margin-bottom:10px;
+        ">
+          Meshing
+        </div>
       <img 
-        src="static/images/aerial.png"
-        alt="Aerial"
-        style="width:100%; max-width:1000px; display:block;"
+        src="static/images/fig-mesh.png"
+        alt="Mesh"
+        style="width:90%; max-width:1000px; display:block; margin:0 auto;"
       >
+      <figcaption style="
+        margin-top:16px;
+        font-size:18px;
+        line-height:1.2;
+        color:#333333b7;
+        text-align: justify;
+        font-family: 'Times New Roman', Times, serif;
+        width:90%; margin: auto;
+      ">
+        Compared with other state-of-the-art approaches, MetroGS converges more rapidly and produces higher-quality mesh results overall.
+      </figcaption>
     </div>
   </div>
 </section>
